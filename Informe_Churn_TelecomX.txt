@@ -1,0 +1,34 @@
+Informe Final - Análisis de Churn en Telecom X
+
+Objetivo del análisis
+El objetivo fue identificar por qué algunos clientes están dejando la empresa Telecom X. Se trabajó con una base de datos en formato JSON y se aplicó limpieza, transformación y análisis simple para entender qué factores influyen en la decisión de abandonar el servicio.
+
+Proceso de limpieza
+- Se eliminaron filas con datos vacíos en columnas importantes como churn y Charges.Total.
+- Se separaron columnas que venían agrupadas en forma de diccionario (por ejemplo: phone, internet, account).
+- Se estandarizó el texto a minúsculas.
+- Se corrigieron los tipos de datos para que los valores numéricos se lean correctamente.
+
+Análisis realizado
+1. Churn general: Se vio que una parte importante de los clientes se fue del servicio.
+2. Contrato: Los clientes con contrato mensual son los que más se van.
+3. Charges.Monthly: Los que se van tienden a pagar un poco más cada mes.
+4. Charges.Total: Los que se quedan han pagado más en total, lo que indica que llevan más tiempo.
+5. Tenure: Los clientes nuevos se van más que los antiguos.
+6. Gráfico de dispersión: Mostró que a más tiempo con la empresa, más gasto total, como se espera.
+
+Resumen de estadísticas
+- Promedio de cargo mensual: (completar con df['Charges.Monthly'].mean())
+- Promedio de permanencia en meses: (completar con df['tenure'].mean())
+- Tipo de contrato más común: (completar con df['Contract'].mode()[0])
+- Método de pago más común: (completar con df['PaymentMethod'].mode()[0])
+
+Conclusiones
+- Los clientes nuevos y con contratos mensuales se van más.
+- El precio mensual puede ser un factor que influye.
+- Los contratos más largos ayudan a mantener a los clientes por más tiempo.
+
+Recomendaciones
+- Ofrecer beneficios a clientes nuevos para que permanezcan.
+- Promover los contratos anuales.
+- Identificar a tiempo a los clientes que podrían irse y contactarlos con ofertas.
